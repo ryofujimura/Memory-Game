@@ -13,6 +13,7 @@
 		AFD3A9E52BA6156700554BA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD3A9E42BA6156700554BA9 /* Preview Assets.xcassets */; };
 		AFD3A9E72BA6156700554BA9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9E62BA6156700554BA9 /* Persistence.swift */; };
 		AFD3A9EA2BA6156700554BA9 /* Memory_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */; };
+		AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F02BA6181800554BA9 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		AFD3A9E42BA6156700554BA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AFD3A9E62BA6156700554BA9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AFD3A9E92BA6156700554BA9 /* Memory_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memory_Game.xcdatamodel; sourceTree = "<group>"; };
+		AFD3A9F02BA6181800554BA9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				AFD3A9DD2BA6156500554BA9 /* Memory_GameApp.swift */,
 				AFD3A9DF2BA6156500554BA9 /* ContentView.swift */,
+				AFD3A9F02BA6181800554BA9 /* CardView.swift */,
 				AFD3A9E12BA6156700554BA9 /* Assets.xcassets */,
 				AFD3A9E62BA6156700554BA9 /* Persistence.swift */,
 				AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */,
@@ -147,6 +150,7 @@
 				AFD3A9E02BA6156500554BA9 /* ContentView.swift in Sources */,
 				AFD3A9EA2BA6156700554BA9 /* Memory_Game.xcdatamodeld in Sources */,
 				AFD3A9DE2BA6156500554BA9 /* Memory_GameApp.swift in Sources */,
+				AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
