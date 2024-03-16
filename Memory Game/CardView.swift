@@ -33,10 +33,10 @@ struct CardView: View {
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(!isShowingEmoji ? Color.blue.gradient : Color.white.gradient)
             Text(isShowingEmoji ? card.emoji : "")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.title)
         }
         .frame(width: 100, height: 100)
-        .rotation3DEffect(.degrees(isShowingEmoji ? 180 : 0), axis: (x: 0, y: 1, z: 0))
+        .rotation3DEffect(.degrees(isShowingEmoji ? 0 : 180), axis: (x: 0, y: 1, z: 0))
         .onTapGesture {
             withAnimation(.linear(duration: 0.2)){
                 isShowingEmoji.toggle()
