@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct pairsButton: View {
+    @State public var numberOfPairs = 3
     var body: some View {
-        Button(action: {
-//            lets user select 3, 6, or 9
-            
-        }){
-            Text("Pairs")
+        Menu{
+            Button("3 Pairs") {
+                numberOfPairs = 3
+                print(numberOfPairs)
+            }
+            Button("6 Pairs") {
+                numberOfPairs = 6
+                print(numberOfPairs)
+            }
+            Button("9 Pairs") {
+                numberOfPairs = 9
+                print(numberOfPairs)
+            }
+        } label: {
+            Label("Pairs", systemImage: "number")
                 .foregroundColor(.black)
                 .font(.title2)
                 .bold()

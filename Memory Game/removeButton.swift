@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct removeButton: View {
+    @State public var resetPressed = false
     var body: some View {
         Button(action: {
             // reset cards to random and face down
-            
+            resetPressed.toggle()
+            print("reset game")
         }) {
             Text("New Game")
                 .foregroundColor(.black)

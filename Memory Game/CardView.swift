@@ -9,24 +9,12 @@ import SwiftUI
 
 struct Card{
     let emoji: String
-
-    static let mockedEmojis = [
-        Card(emoji: "😎"),
-        Card(emoji: "🐠"),
-        Card(emoji: "👞"),
-        Card(emoji: "👼"),
-        Card(emoji: "🥷"),
-        Card(emoji: "👮‍♂️"),
-        Card(emoji: "🦺"),
-        Card(emoji: "🦷"),
-        Card(emoji: "🤖")
-    ]
 }
 
 struct CardView: View {
     let card: Card
     
-    @State private var isShowingEmoji = true
+    @State public var isShowingEmoji = true
     
     var body: some View {
         ZStack{
