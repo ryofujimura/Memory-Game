@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct pairsButton: View {
+struct PairsButton: View {
     @State public var numberOfPairs = 9
     var body: some View {
         Menu{
@@ -37,6 +37,6 @@ struct pairsButton: View {
 }
 
 #Preview {
-    pairsButton()
+    PairsButton()
 }
  

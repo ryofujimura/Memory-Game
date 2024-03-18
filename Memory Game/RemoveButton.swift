@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct removeButton: View {
+struct RemoveButton: View {
     @State private var numberOfPairs = 9
     
     var body: some View {
@@ -30,5 +30,5 @@ struct removeButton: View {
 }
 
 #Preview {
-    removeButton()
+    RemoveButton()
 }
