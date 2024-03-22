@@ -10,6 +10,7 @@
 		AF2CF1F32BA6A61C000BCED3 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */; };
 		AFA0F27E2BA8F4F9002928A8 /* MemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */; };
 		AFA0F2802BA8F9BE002928A8 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */; };
+		AFBF3C462BAE2B04004D6548 /* PairButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBF3C452BAE2B04004D6548 /* PairButton.swift */; };
 		AFD3A9DE2BA6156500554BA9 /* Memory_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9DD2BA6156500554BA9 /* Memory_GameApp.swift */; };
 		AFD3A9E02BA6156500554BA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9DF2BA6156500554BA9 /* ContentView.swift */; };
 		AFD3A9E22BA6156700554BA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD3A9E12BA6156700554BA9 /* Assets.xcassets */; };
@@ -18,13 +19,14 @@
 		AFD3A9EA2BA6156700554BA9 /* Memory_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */; };
 		AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F02BA6181800554BA9 /* CardView.swift */; };
 		AFD3A9F32BA64D1600554BA9 /* RemoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F22BA64D1600554BA9 /* RemoveButton.swift */; };
-		AFD3A9F52BA653D900554BA9 /* PairsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F42BA653D900554BA9 /* PairsButton.swift */; };
+		AFD3A9F52BA653D900554BA9 /* PairsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameView.swift; sourceTree = "<group>"; };
 		AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
+		AFBF3C452BAE2B04004D6548 /* PairButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairButton.swift; sourceTree = "<group>"; };
 		AFD3A9DA2BA6156500554BA9 /* Memory Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD3A9DD2BA6156500554BA9 /* Memory_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memory_GameApp.swift; sourceTree = "<group>"; };
 		AFD3A9DF2BA6156500554BA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,7 +36,7 @@
 		AFD3A9E92BA6156700554BA9 /* Memory_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memory_Game.xcdatamodel; sourceTree = "<group>"; };
 		AFD3A9F02BA6181800554BA9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		AFD3A9F22BA64D1600554BA9 /* RemoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveButton.swift; sourceTree = "<group>"; };
-		AFD3A9F42BA653D900554BA9 /* PairsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsButton.swift; sourceTree = "<group>"; };
+		AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +76,8 @@
 				AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */,
 				AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */,
 				AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */,
-				AFD3A9F42BA653D900554BA9 /* PairsButton.swift */,
+				AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */,
+				AFBF3C452BAE2B04004D6548 /* PairButton.swift */,
 				AFD3A9E12BA6156700554BA9 /* Assets.xcassets */,
 				AFD3A9E62BA6156700554BA9 /* Persistence.swift */,
 				AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */,
@@ -164,9 +167,10 @@
 				AFD3A9E72BA6156700554BA9 /* Persistence.swift in Sources */,
 				AFD3A9E02BA6156500554BA9 /* ContentView.swift in Sources */,
 				AFA0F27E2BA8F4F9002928A8 /* MemoryGameView.swift in Sources */,
-				AFD3A9F52BA653D900554BA9 /* PairsButton.swift in Sources */,
+				AFD3A9F52BA653D900554BA9 /* PairsButtonView.swift in Sources */,
 				AFD3A9EA2BA6156700554BA9 /* Memory_Game.xcdatamodeld in Sources */,
 				AFD3A9DE2BA6156500554BA9 /* Memory_GameApp.swift in Sources */,
+				AFBF3C462BAE2B04004D6548 /* PairButton.swift in Sources */,
 				AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */,
 				AF2CF1F32BA6A61C000BCED3 /* MemoryGame.swift in Sources */,
 				AFD3A9F32BA64D1600554BA9 /* RemoveButton.swift in Sources */,

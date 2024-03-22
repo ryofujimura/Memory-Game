@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
 //    @State private var numberOfPairs = 9
-    @State private var emoji = ["😎", "🐠", "👞", "👼", "🥷", "👮‍♂️", "🦺", "🦷", "🍄"]
+//    @State private var emoji = ["😎", "🐠", "👞", "👼", "🥷", "👮‍♂️", "🦺", "🦷", "🍄"]
 //    @State private var isShowingEmoji = true
     @State private var chosenEmojis = [""]
     private var emojiMemoryGame = EmojiMemoryGame()
@@ -24,7 +24,7 @@ struct ContentView: View {
                     .bold()
                 HStack{
                     RemoveButton()
-                    PairsButton()
+                    PairsButtonView()
                 }
             }
             .padding()

@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct PairsButton: View {
-    @State public var numberOfPairs = 9
+struct PairsButtonView: View {
+    @StateObject var pairButton = PairButton()
     var body: some View {
         Menu{
             Button("3 Pairs") {
-                numberOfPairs = 3
-                print(numberOfPairs)
+                pairButton.numberOfPairs = 3
+                print(pairButton.numberOfPairs)
             }
             Button("6 Pairs") {
-                numberOfPairs = 6
-                print(numberOfPairs)
+                pairButton.numberOfPairs = 6
+                print(pairButton.numberOfPairs)
             }
             Button("9 Pairs") {
-                numberOfPairs = 9
-                print(numberOfPairs)
+                pairButton.numberOfPairs = 9
+                print(pairButton.numberOfPairs)
             }
         } label: {
-            Label("Pairs", systemImage: "number")
+            Text(String(pairButton.numberOfPairs) + " Pairs")
                 .foregroundColor(.black)
                 .font(.title2)
                 .bold()
@@ -37,6 +37,6 @@ struct PairsButton: View {
 }
 
 #Preview {
-    PairsButton()
+    PairsButtonView()
 }
  
