@@ -50,12 +50,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF1FB7D12BAE8FD300A57E26 /* Arcvhive */ = {
+			isa = PBXGroup;
+			children = (
+				AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */,
+				AFD3A9F22BA64D1600554BA9 /* NewGameButtonView.swift */,
+				AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */,
+				AFBF3C452BAE2B04004D6548 /* PairButton.swift */,
+			);
+			path = Arcvhive;
+			sourceTree = "<group>";
+		};
 		AFBF3C472BAE7648004D6548 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */,
 				AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */,
-				AFBF3C452BAE2B04004D6548 /* PairButton.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -64,9 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				AFD3A9DF2BA6156500554BA9 /* ContentView.swift */,
-				AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */,
-				AFD3A9F22BA64D1600554BA9 /* NewGameButtonView.swift */,
-				AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */,
 				AFD3A9F02BA6181800554BA9 /* CardView.swift */,
 			);
 			path = View;
@@ -93,6 +100,7 @@
 			children = (
 				AFD3A9DD2BA6156500554BA9 /* Memory_GameApp.swift */,
 				AFD3A9E62BA6156700554BA9 /* Persistence.swift */,
+				AF1FB7D12BAE8FD300A57E26 /* Arcvhive */,
 				AFBF3C482BAE7651004D6548 /* View */,
 				AFBF3C472BAE7648004D6548 /* Data */,
 				AFD3A9E12BA6156700554BA9 /* Assets.xcassets */,

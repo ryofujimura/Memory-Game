@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct MemoryGame {
+struct MemoryGame<CardContent> where CardContent: Equatable {
     private(set) var cards: [Card]
     private var indexOfTheOneAndOnlyFaceUpCard: Int?
     
-    init(numberOfPairsOfCards: Int, createCardContent: (Int) -> String) {
+    init(numberOfPairsOfCards: Int, createCardContent: (Int) -> CardContent) {
         cards = []
         for pairIndex in 0..<numberOfPairsOfCards {
             let content = createCardContent(pairIndex)
@@ -41,11 +41,11 @@ struct MemoryGame {
         }
     }
     
-    struct Card: Identifiable, Equatable {
+    struct Card: Identifiable {
         var isFaceUp = false
         var isMatched = false
-        let content: String
+        let content: CardContent
         let id: Int
     }
+    
 }
-
