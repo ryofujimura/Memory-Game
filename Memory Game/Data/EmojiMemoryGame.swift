@@ -13,6 +13,9 @@ class EmojiMemoryGame: ObservableObject {
     private static let emojis = ["😎", "🐠", "👞", "👼", "🥷", "👮‍♂️", "🦺", "🦷", "🍄","🍏"]
 
     @Published private var model: MemoryGame<String>
+    
+    @Published var gameEnded = false
+    @Published private(set) var moveCount = 0
 
     init() {
         model = MemoryGame<String>(numberOfPairsOfCards: 6) { pairIndex in
@@ -23,12 +26,23 @@ class EmojiMemoryGame: ObservableObject {
     var cards: [Card] {
         model.cards
     }
-
-    func choose(_ card: Card) {
-        model.choose(card)
+    
+    private func checkIfGameEnded() {
+        if model.cards.allSatisfy({ $0.isMatched }) {
+            gameEnded = true
+        }
     }
 
+    func choose(_ card: Card) {
+        if !gameEnded {
+            model.choose(card)
+            moveCount += 1
+            checkIfGameEnded()
+        }    }
+
     func newGame(withPairs pairs: Int) {
+        gameEnded = false
+        moveCount = 0
         model = MemoryGame<String>(numberOfPairsOfCards: pairs) { pairIndex in
             Self.emojis[pairIndex]
         }

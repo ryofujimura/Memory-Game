@@ -66,6 +66,15 @@ struct ContentView: View {
             }
         }
         .padding(.horizontal)
+        .alert(isPresented: $emojiMemoryGame.gameEnded) {
+                    Alert(
+                        title: Text("Congratulations!"),
+                        message: Text("You completed the game in \(emojiMemoryGame.moveCount/2) moves."),
+                        dismissButton: .default(Text("New Game")) {
+                            emojiMemoryGame.newGame(withPairs: pairs)
+                        }
+                    )
+                }
     }
 }
 
