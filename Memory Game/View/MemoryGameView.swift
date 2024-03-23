@@ -17,16 +17,16 @@ struct MemoryGameView: View {
             GridItem(.flexible())
         ]
         
-//        LazyVGrid(columns: columns, spacing: 5) {
-//            ForEach(memoryGame.cards) { card in
-//                CardView(card: card).onTapGesture {
-//                    memoryGame.choose(card)
-//                }
-//            }
-//        }
+        LazyVGrid(columns: columns, spacing: 5) {
+            ForEach(memoryGame.cards) { card in
+                CardView(card: card).onTapGesture {
+                    memoryGame.choose(card)
+                }
+            }
+        }
     }
 }
-//
-//#Preview {
-//    MemoryGameView(memoryGame: EmojiMemoryGame)
-//}
+
+#Preview {
+    MemoryGameView(memoryGame: EmojiMemoryGame())
+}
