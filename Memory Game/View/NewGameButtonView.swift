@@ -7,15 +7,20 @@
 
 import SwiftUI
 
-struct RemoveButton: View {
-    @State private var numberOfPairs = 9
+struct NewGameButtonView: View {
+    var numberOfPairs:Int = 1
     
     var body: some View {
         Button(action: {
-            // reset cards to random and face down
+            print("1.1", numberOfPairs)
             let currentNumberOfPairs = numberOfPairs
-            numberOfPairs = 0
-            numberOfPairs = currentNumberOfPairs
+            print("2.1", currentNumberOfPairs)
+//            numberOfPairs = 0
+            ContentView().pairs = 0
+            print("1.2", numberOfPairs)
+//            numberOfPairs = currentNumberOfPairs
+            print("1.3", numberOfPairs)
+            print("2.3", currentNumberOfPairs)
         }) {
             Text("New Game")
                 .foregroundColor(.black)
@@ -30,5 +35,5 @@ struct RemoveButton: View {
 }
 
 #Preview {
-    RemoveButton()
+    NewGameButtonView(numberOfPairs: 5)
 }

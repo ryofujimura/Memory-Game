@@ -18,7 +18,7 @@
 		AFD3A9E72BA6156700554BA9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9E62BA6156700554BA9 /* Persistence.swift */; };
 		AFD3A9EA2BA6156700554BA9 /* Memory_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */; };
 		AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F02BA6181800554BA9 /* CardView.swift */; };
-		AFD3A9F32BA64D1600554BA9 /* RemoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F22BA64D1600554BA9 /* RemoveButton.swift */; };
+		AFD3A9F32BA64D1600554BA9 /* NewGameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F22BA64D1600554BA9 /* NewGameButtonView.swift */; };
 		AFD3A9F52BA653D900554BA9 /* PairsButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +35,7 @@
 		AFD3A9E62BA6156700554BA9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		AFD3A9E92BA6156700554BA9 /* Memory_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Memory_Game.xcdatamodel; sourceTree = "<group>"; };
 		AFD3A9F02BA6181800554BA9 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		AFD3A9F22BA64D1600554BA9 /* RemoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveButton.swift; sourceTree = "<group>"; };
+		AFD3A9F22BA64D1600554BA9 /* NewGameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameButtonView.swift; sourceTree = "<group>"; };
 		AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +50,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFBF3C472BAE7648004D6548 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */,
+				AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */,
+				AFBF3C452BAE2B04004D6548 /* PairButton.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AFBF3C482BAE7651004D6548 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AFD3A9DF2BA6156500554BA9 /* ContentView.swift */,
+				AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */,
+				AFD3A9F22BA64D1600554BA9 /* NewGameButtonView.swift */,
+				AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */,
+				AFD3A9F02BA6181800554BA9 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AFD3A9D12BA6156500554BA9 = {
 			isa = PBXGroup;
 			children = (
@@ -70,16 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				AFD3A9DD2BA6156500554BA9 /* Memory_GameApp.swift */,
-				AFD3A9DF2BA6156500554BA9 /* ContentView.swift */,
-				AFD3A9F02BA6181800554BA9 /* CardView.swift */,
-				AFD3A9F22BA64D1600554BA9 /* RemoveButton.swift */,
-				AFA0F27D2BA8F4F9002928A8 /* MemoryGameView.swift */,
-				AF2CF1F22BA6A61C000BCED3 /* MemoryGame.swift */,
-				AFA0F27F2BA8F9BE002928A8 /* EmojiMemoryGame.swift */,
-				AFD3A9F42BA653D900554BA9 /* PairsButtonView.swift */,
-				AFBF3C452BAE2B04004D6548 /* PairButton.swift */,
-				AFD3A9E12BA6156700554BA9 /* Assets.xcassets */,
 				AFD3A9E62BA6156700554BA9 /* Persistence.swift */,
+				AFBF3C482BAE7651004D6548 /* View */,
+				AFBF3C472BAE7648004D6548 /* Data */,
+				AFD3A9E12BA6156700554BA9 /* Assets.xcassets */,
 				AFD3A9E82BA6156700554BA9 /* Memory_Game.xcdatamodeld */,
 				AFD3A9E32BA6156700554BA9 /* Preview Content */,
 			);
@@ -173,7 +189,7 @@
 				AFBF3C462BAE2B04004D6548 /* PairButton.swift in Sources */,
 				AFD3A9F12BA6181800554BA9 /* CardView.swift in Sources */,
 				AF2CF1F32BA6A61C000BCED3 /* MemoryGame.swift in Sources */,
-				AFD3A9F32BA64D1600554BA9 /* RemoveButton.swift in Sources */,
+				AFD3A9F32BA64D1600554BA9 /* NewGameButtonView.swift in Sources */,
 				AFA0F2802BA8F9BE002928A8 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

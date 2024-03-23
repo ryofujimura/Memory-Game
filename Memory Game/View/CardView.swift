@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CardView: View {
     let card: MemoryGame.Card
-    
     var body: some View {
         ZStack {
             let shape = RoundedRectangle(cornerRadius: 25)
@@ -19,13 +18,15 @@ struct CardView: View {
                 Text(card.content).font(.title)
             } else if card.isMatched {
                 shape.opacity(0)
+//                Text("☑️").font(.title)
             } else {
                 shape.fill().foregroundColor(.white)
                 shape.strokeBorder(lineWidth: 6).foregroundColor(.blue.opacity(0.8))
+                Text("👾").font(.title)
 
             }
         }
         .shadow(color: .black.opacity(0.1), radius: 4, x: -2, y: 2)
-        .aspectRatio(2/3, contentMode: .fit)
+        .aspectRatio(4/5, contentMode: .fit)
     }
 }

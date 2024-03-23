@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @State private var numberOfPairs = 9
-//    @State private var emoji = ["😎", "🐠", "👞", "👼", "🥷", "👮‍♂️", "🦺", "🦷", "🍄"]
-//    @State private var isShowingEmoji = true
-    @State private var chosenEmojis = [""]
     private var emojiMemoryGame = EmojiMemoryGame()
-
-
+//    private var numOfPairs = PairButton()
+//    @State private var memoryGame = EmojiMemoryGame()
+    @State public var pairs = 6
+    
     var body: some View {
-        
         VStack{
             VStack{
                 Text("Memory Game")
                     .font(.title)
                     .bold()
                 HStack{
-                    RemoveButton()
+                    NewGameButtonView(numberOfPairs: pairs)
                     PairsButtonView()
                 }
             }
@@ -34,7 +31,7 @@ struct ContentView: View {
                     .shadow(radius: 10)
                     .opacity(0.2)
                 ScrollView{
-                    MemoryGameView(viewModel: emojiMemoryGame)
+                    MemoryGameView(memoryGame: emojiMemoryGame)
                         .padding()
                 }
             }

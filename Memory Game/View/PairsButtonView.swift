@@ -8,23 +8,24 @@
 import SwiftUI
 
 struct PairsButtonView: View {
-    @StateObject var pairButton = PairButton()
+//    @State var numberOfPairs:Int
+    
     var body: some View {
         Menu{
             Button("3 Pairs") {
-                pairButton.numberOfPairs = 3
-                print(pairButton.numberOfPairs)
+                ContentView().pairs  = 3
+                print(ContentView().pairs )
             }
             Button("6 Pairs") {
-                pairButton.numberOfPairs = 6
-                print(pairButton.numberOfPairs)
+                ContentView().pairs  = 6
+                print(ContentView().pairs )
             }
             Button("9 Pairs") {
-                pairButton.numberOfPairs = 9
-                print(pairButton.numberOfPairs)
+                ContentView().pairs  = 9
+                print(ContentView().pairs )
             }
         } label: {
-            Text(String(pairButton.numberOfPairs) + " Pairs")
+            Text(String(ContentView().pairs ) + " Pairs")
                 .foregroundColor(.black)
                 .font(.title2)
                 .bold()
